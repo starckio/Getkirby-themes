@@ -1,0 +1,419 @@
+/*
+
+Getkirby-themes — Private design
+
+Source: Kirby Starterkit
+Author: Christopher Boutillé
+URL:    http://www.getkirby-themes.com
+Email:  contact@starck.io
+
+*/
+
+
+/* Source Sans Pro
+-------------------------------------------------- */
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 300;
+	src: url(../fonts/sourcesanspro-300.woff) format('woff');
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/sourcesanspro-400.woff) format('woff');
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 600;
+	src: url(../fonts/sourcesanspro-600.woff) format('woff');
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: italic;
+	font-weight: 400;
+	src: url(../fonts/sourcesanspro-400-italic.woff) format('woff');
+}
+
+
+/* Reset
+-------------------------------------------------- */
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+					box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+
+/* Pix
+-------------------------------------------------- */
+img {
+	display: block;
+	max-width: 100%;
+}
+
+
+/* Links
+-------------------------------------------------- */
+a {
+	color: #000;
+	text-decoration: none;
+	transition: color .3s, background .3s, border .3s;
+}
+a:hover {
+	color: #abaa98;
+}
+
+
+/* Clearfix
+-------------------------------------------------- */
+.cf:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* Site
+-------------------------------------------------- */
+html {
+	height: 101%;
+	font-family: "Source Sans Pro", sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	margin: 0 auto;
+	font-size: 1.25em;
+	line-height: 1.5em;
+	padding: 1.5em;
+	max-width: 50em;
+	background: #fff;
+	color: #222;
+}
+
+
+/* Header
+-------------------------------------------------- */
+.header {
+	border-bottom: 2px solid #abaa98;
+	margin-bottom: 1.5em;
+}
+.logo {
+	display: block;
+	margin-bottom: 1.5em;
+}
+.logo img {
+	width: 2em;
+}
+
+
+/* Navigation
+-------------------------------------------------- */
+.menu a {
+	display: block;
+	color: #222;
+}
+.menu a:hover {
+	color: #abaa98;
+	text-decoration: none;
+}
+.menu .active {
+	color: #abaa98;
+}
+.menu li {
+	list-style: none;
+}
+.menu > li {
+	position: relative;
+}
+.menu > li > a {
+	padding: .35em 0;
+	border-top: 1px solid #ddd;
+	font-weight: 600;
+}
+
+@media screen and (min-width: 40em) {
+	body {
+		padding: 3em;
+	}
+	.logo {
+		float: left;
+	}
+	.menu {
+		float: right;
+		margin-right: -1em;
+	}
+	.menu > li {
+		float: left;
+	}
+	.menu > li > a {
+		padding: .35em 1em;
+		border: 0;
+	}
+}
+
+
+/* Headings
+-------------------------------------------------- */
+h1 {
+	font-size: 2em;
+	line-height: 1.25em;
+	font-weight: 400;
+	margin-bottom: .5em;
+}
+h2 {
+	font-size: 2em;
+	line-height: 1.25em;
+	font-weight: 300;
+	margin-bottom: .5em;
+	color: #abaa98;
+}
+h3 {
+	font-size: 1.4em;
+	line-height: 1.5em;
+	font-weight: 400;
+	margin-bottom: .5em;
+}
+h4 {
+	font-size: 1.125em;
+	font-weight: 600;
+	line-height: 1.5em;
+	margin-bottom: .5em;
+	color: #abaa98;
+}
+h1 a, h2 a, h3 a, h4 a {
+	color: inherit;
+	border: 0 !important;
+}
+
+
+
+/* Main
+-------------------------------------------------- */
+.main {
+	padding-bottom: 1.5em;
+	border-bottom: 2px solid #abaa98;
+}
+.main hr {
+	margin: 3em 0;
+	height: 2px;
+	background: #ddd;
+}
+.main p,
+.main figure,
+.main ul,
+.main ol {
+	margin-bottom: 1.5em;
+}
+.main a {
+	border-bottom: 2px solid #ddd;
+}
+.main a:hover {
+	border-color: #222;
+}
+
+/* Text blocks */
+.text ul,
+.text ol {
+	margin-left: 1em;
+}
+
+/* Project meta
+-------------------------------------------------- */
+.meta {
+	margin-bottom: 1.5em;
+}
+.meta li {
+	float: left;
+	list-style: none;
+	margin-right: 2em;
+	color: #abaa98;
+}
+.meta li b {
+	font-weight: 400;
+	color: #000;
+	padding-right: .25em;
+}
+
+
+/* Project teaser
+-------------------------------------------------- */
+.teaser {
+	list-style: none;
+}
+.teaser li {
+	margin-bottom: 1.5em;
+	list-style: none;
+}
+@media screen and (min-width: 50em) {
+	.teaser li {
+		float: left;
+		width: 30%;
+		margin-left: 5%;
+	}
+	.teaser li:first-child {
+		margin-left: 0;
+	}
+}
+
+
+/* Next/Prev nav
+-------------------------------------------------- */
+.nextprev {
+	padding: 1em 0;
+}
+.nextprev a {
+	border: 0;
+}
+.nextprev .prev {
+	float: left;
+}
+.nextprev .next {
+	float: right;
+}
+
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+	padding: 1em 0 6em;
+	font-size: .8em;
+}
+.copyright {
+	float: left;
+}
+.colophon {
+	float: right;
+}
+.colophon a b {
+	color: red;
+	padding-left: .25em;
+}
+
+
+/* Forms
+-------------------------------------------------- */
+form label {
+	position: relative;
+	font-size: 1em;
+	font-weight: 600;
+	display: block;
+	line-height: 1.5em;
+	padding-bottom: .5em
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="url"],
+form input[type="password"],
+form select,
+form textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 100%;
+	margin: 0;
+	padding: .7em;
+	color: #222;
+	background: transparent !important;
+	border: 2px solid #ddd;
+	display: inline-block;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: .8em;
+	line-height: 1.5em;
+	outline: none;
+	position: relative;
+}
+form textarea {
+	min-height: 10em;
+	display: block;
+}
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form input[type="url"]:hover,
+form input[type="password"]:hover,
+form textarea:hover {
+	border-color: #ccc;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="url"]:focus,
+form input[type="password"]:focus,
+form textarea:focus {
+	color: #222;
+	border-color: #abaa98;
+}
+form .field {
+	margin-bottom: 1em;
+}
+.honey {
+	position: absolute;
+	left: -9999px;
+}
+
+
+/* Buttons
+-------------------------------------------------- */
+[class*='btn'], a[class*='btn'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	background: transparent;
+	color: #000;
+	border: 2px solid #000;
+	border-radius: 5em;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'Din Round Pro', sans-serif;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 1.5em;
+	margin: 0;
+	outline: none;
+	padding: .3em 1em;
+	position: relative;
+}
+[class*='btn']::-moz-focus-inner {
+	background: #000;
+	color: #FFF;
+	padding: 0;
+}
+[class*='btn']:hover,
+[class*='btn']:focus {
+	background: #000;
+	color: #FFF;
+}
+
+
+/* Alerts
+-------------------------------------------------- */
+.alert {
+	color: #fff;
+	/*font-size: .8em;*/
+	text-align: center;
+	padding: .5em;
+	margin-bottom: 1.5em;
+	background: #abaa98;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.alert p {
+	margin-bottom: 0;
+}
+.alert.success {
+	background: #19cf86;
+}
+.alert.error {
+	background: #F50057;
+}

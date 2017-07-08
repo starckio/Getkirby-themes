@@ -1,0 +1,27 @@
+title: Site
+pages: default
+fields:
+  tab1:
+    label: General
+    type:  tabs
+  title:
+    label: Title
+    type:  text
+  author:
+    label: Author
+    type:  text
+  description:
+    label: Description
+    type:  textarea
+  keywords:
+    label: Keywords
+    type:  tags
+  copyright:
+    label: Copyright
+    type:  textarea
+  tab2:
+    label: Theme config
+    type:  tabs
+  test:
+    label: Test
+    type:  text

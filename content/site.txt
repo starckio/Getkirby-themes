@@ -1,0 +1,21 @@
+Title: Getkirby-Themes
+
+----
+
+Author: Christopher Boutillé
+
+----
+
+Description: Getkirby-theme development beta.
+
+----
+
+Keywords: Kirby,CMS,file-based
+
+----
+
+Copyright: © 2009-(date: Year) (link: http://starck.io text: Starckio)
+
+----
+
+Test: 

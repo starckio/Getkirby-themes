@@ -1,0 +1,46 @@
+title: Theme
+pages: false
+files:
+  sortable: true
+fields:
+  title:
+    label: Name
+    type:  text
+    width: 4/5
+  author:
+    label: Author
+    type: user
+    type: hidden
+  price:
+    label: Price
+    type:  text
+    width: 1/5
+    icon: dollar
+    validate: price
+  market:
+    label: Market
+    type:  url
+    validate: market
+    width: 1/2
+  demo:
+    label: Live demo
+    type:  url
+    width: 1/2
+  text:
+    label: Text
+    type:  textarea
+  category:
+    label: Category
+    type: radio
+    default: minimal
+    options:
+      blog: Blog
+      business: Business
+      commerce: Commerce
+      landing-page: Landing Page
+      magazine: Magazine
+      minimal: Minimal
+      non-profit: Non-Profit
+      photography: Photography
+      portfolio: Portfolio
+      wedding: Wedding
